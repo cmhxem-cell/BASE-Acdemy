@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Base Academy Bahawalpur – True Sense Education</title>
+<meta name="description" content="Base Academy Bahawalpur: board-focused teaching from 8th class to FSc and ICS at two campuses. Admissions open.">
+<meta name="theme-color" content="#171f50">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#171f50;--teal:#2a7c8e;--red:#d3202b;--paper:#f5f8f9;--card:#fff;--ink:#171f50;--mute:#55597a;--line:#dde3ea;--sl:"Roboto Slab",Rockwell,Georgia,serif;--sn:"Figtree","Segoe UI",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0e1236;--card:#171d4d;--ink:#eef2f7;--mute:#aab0d0;--line:#2a3170}}
+:root[data-theme="dark"]{--paper:#0e1236;--card:#171d4d;--ink:#eef2f7;--mute:#aab0d0;--line:#2a3170}
+html{height:auto;scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sn);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--sl);font-weight:800;line-height:1.15;margin:0;letter-spacing:-.01em}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+.top{background:var(--navy);color:#dfe5f2;font-size:13px}
+.top .w{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.top b{color:#fff;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.wm{font-family:var(--sl);font-weight:800;font-size:24px;color:var(--red);line-height:1}
+.wm span{font-family:var(--sn);font-weight:400;letter-spacing:.32em;font-size:12px;color:var(--navy);display:block;margin-top:4px}
+:root[data-theme="dark"] .wm span{color:#cfd6ee}
+nav{display:flex;gap:4px}
+nav a{padding:8px 13px;border-radius:8px;font-weight:600;font-size:14.5px;color:var(--mute)}
+nav a:hover{color:var(--ink);background:var(--paper)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:10px;font:700 15px var(--sn);border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:#b01922}
+.btn.o{border-color:var(--navy);color:var(--navy)}.btn.o:hover{background:var(--navy);color:#fff}
+.menu{display:none;background:none;border:2px solid var(--line);color:var(--ink);width:44px;height:44px;border-radius:10px;font-size:20px;cursor:pointer}
+/* hero */
+.hero{padding:56px 0 72px;background:radial-gradient(900px 420px at 85% 0,rgba(42,124,142,.14),transparent 70%)}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,58px)}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p.lead{font-size:18px;color:var(--mute);max-width:52ch;margin:20px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:36px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.facts div{font-size:14px;color:var(--mute)}.facts b{display:block;font:800 30px var(--sl);color:var(--ink)}
+.ring{position:relative;padding:14px;border-radius:50%}
+.frame{position:relative;border-radius:28px;overflow:hidden;border:6px solid var(--navy);outline:3px solid var(--teal);outline-offset:6px;aspect-ratio:4/4.4;background:var(--navy)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:top}
+.seal{position:absolute;left:-26px;bottom:34px;width:112px;height:112px;border-radius:50%;box-shadow:0 10px 30px rgba(23,31,80,.3);background:#fff}
+/* heads */
+.hd{max-width:640px;margin-bottom:36px}
+.hd h2{font-size:clamp(28px,3.6vw,40px)}.hd p{color:var(--mute);margin:12px 0 0}
+.kick{display:inline-block;font-weight:700;font-size:14px;color:var(--teal);margin-bottom:10px;padding-left:34px;position:relative}
+.kick::before{content:"";position:absolute;left:0;top:50%;width:24px;height:3px;background:var(--red);border-radius:2px}
+/* results */
+.res{background:var(--navy);color:#fff}
+.res .hd p{color:#b9c1e0}.res .kick{color:#8fd0de}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.rc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;overflow:hidden}
+.rc button{display:block;width:100%;border:0;padding:0;background:none;cursor:zoom-in}
+.rc img{width:100%;aspect-ratio:796/660;object-fit:cover}
+.rc div{padding:20px 24px 24px}
+.rc b{font:800 44px/1 var(--sl)}.rc b small{font-size:20px;font-weight:500;color:#b9c1e0}
+.rc h3{font-size:20px;margin-top:10px}.rc p{margin:4px 0 0;color:#b9c1e0;font-size:14.5px}
+/* leaders */
+.lg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.lc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px 26px;text-align:center}
+.pf{width:128px;height:128px;margin:0 auto 20px;border-radius:50%;padding:5px;background:var(--card);border:4px solid var(--navy);outline:3px solid var(--teal);outline-offset:3px}
+.pf img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.lc h3{font-size:20px}.role{color:var(--red);font-weight:700;font-size:14px;margin:4px 0 14px}
+.lc p{color:var(--mute);font-size:15px;margin:0}
+/* programs */
+.prg{background:linear-gradient(var(--paper),var(--card))}
+.lad{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.lad::before{content:"";position:absolute;left:5%;right:5%;top:27px;height:3px;background:linear-gradient(90deg,var(--teal),var(--red))}
+.st{position:relative;text-align:center;padding:0 10px}
+.st i{display:grid;place-items:center;width:56px;height:56px;margin:0 auto 16px;border-radius:50%;background:var(--card);border:3px solid var(--navy);font:800 15px var(--sl);font-style:normal;position:relative}
+.st h3{font-size:19px}.st p{font-size:14px;color:var(--mute);margin:6px 0 0}
+/* admission */
+.ad{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:start}
+form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:grid;gap:18px;grid-template-columns:1fr 1fr}
+form .f{grid-column:1/-1}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select{height:48px;padding:0 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font:500 15px var(--sn)}
+input:focus,select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(42,124,142,.25)}
+.ok{display:none;grid-column:1/-1;background:rgba(42,124,142,.12);border:1px solid var(--teal);border-radius:12px;padding:14px 16px;font-weight:600}
+.side{display:grid;gap:20px}
+.pst{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px}
+.pst img{width:96px;height:96px;border-radius:12px;object-fit:cover;flex:none}
+.pst p{margin:0;color:var(--mute);font-size:14.5px}.pst b{color:var(--ink);font-family:var(--sl)}
+.bld{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.bld img{width:100%;height:240px;object-fit:cover;object-position:top}
+.bld p{margin:0;padding:14px 18px;font-size:14px;color:var(--mute)}
+/* campuses */
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cc{border-radius:20px;padding:32px;color:#fff;position:relative;overflow:hidden}
+.cc.a{background:var(--navy)}.cc.b{background:var(--teal)}
+.cc::after{content:"";position:absolute;right:-70px;bottom:-70px;width:220px;height:220px;border-radius:50%;border:26px solid rgba(255,255,255,.08)}
+.cc h3{font-size:24px}.cc p{margin:10px 0 20px;opacity:.88}
+.ph{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
+.ph a{background:#fff;color:var(--navy);padding:10px 18px;border-radius:10px;font-weight:700}
+.ph a:hover{background:var(--red);color:#fff}
+.tm{margin-top:20px;color:var(--mute);font-size:14.5px}
+footer{background:var(--navy);color:#c3cae6;border-top:5px solid var(--red);padding:44px 0 28px;font-size:14.5px}
+footer .w{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+footer img{width:60px;height:60px;border-radius:50%}
+footer b{color:#fff}.fb{display:flex;gap:14px;align-items:center}
+.cp{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;opacity:.8;width:100%}
+.lb{position:fixed;inset:0;background:rgba(8,10,35,.92);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+.lb.on{display:flex}.lb img{max-height:88vh;border-radius:12px}
+.lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:16px;background:#fff;border:0;border-radius:10px;padding:10px 16px;font:700 14px var(--sn);cursor:pointer}
+@media(max-width:960px){nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:var(--card);padding:12px 20px;border-bottom:1px solid var(--line)}
+nav.on{display:flex}.menu{display:block}.hdbtn{display:none}
+.hero .w,.ad,.rg,.cg{grid-template-columns:1fr}.lg{grid-template-columns:1fr}
+.lad{grid-template-columns:1fr 1fr;row-gap:28px}.lad::before{display:none}.seal{left:8px;width:88px;height:88px}
+section{padding:52px 0}form{grid-template-columns:1fr;padding:22px}.top .w span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.why{display:grid;grid-template-columns:1fr 1fr;gap:20px 48px}
+.why div{border-left:4px solid var(--teal);padding:4px 0 4px 20px}.why h3{font-size:19px}.why p{margin:6px 0 0;color:var(--mute);font-size:15px}
+.pr{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:32px}
+.pr div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:14.5px;color:var(--mute)}
+.pr b{display:block;font:800 17px var(--sl);color:var(--ink);margin-bottom:4px}.pr i{font:800 14px var(--sl);font-style:normal;color:var(--red)}
+.acts{grid-column:1/-1;display:flex;gap:12px;flex-wrap:wrap}.acts .btn{flex:1;min-width:170px}
+.btn.t{background:var(--teal);color:#fff}.btn.t:hover{background:#1f6372}
+.note{grid-column:1/-1;margin:0;font-size:13.5px;color:var(--mute)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font:800 20px var(--sl);color:var(--red)}details[open] summary::after{content:"–"}
+details p{margin:0 0 16px;color:var(--mute)}
+.band{background:linear-gradient(100deg,var(--red),#a3141d);color:#fff;padding:36px 0}
+.band .w{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.band h2{font-size:28px}.band p{margin:6px 0 0;opacity:.9}.band .btn{background:#fff;color:var(--red)}.band .btn:hover{background:var(--navy);color:#fff}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1.3fr 1.3fr;gap:36px;width:100%}
+footer h4{font:700 15px var(--sl);color:#fff;margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}footer li a:hover{color:#fff;text-decoration:underline}
+footer .ab{margin:16px 0 0;font-size:14px;line-height:1.7;max-width:34ch}
+footer .cm{margin-bottom:16px;line-height:1.6}footer .cm b{display:block}
+.bt{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cr{display:inline-flex;align-items:center;gap:5px;text-decoration:underline;text-underline-offset:3px}.cr:hover{opacity:.8}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--teal);color:#fff;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(23,31,80,.35)}
+#sheet{display:none;background:#fff;color:#111}
+@media print{@page{margin:12mm}body>*:not(#sheet){display:none!important}#sheet{display:block!important;font:14px/1.5 Georgia,serif}
+#sheet .hdp{display:flex;align-items:center;gap:14px;border-bottom:4px solid #171f50;padding-bottom:10px}#sheet .hdp img{width:70px;height:70px;border-radius:50%}
+#sheet h1{font:800 22px "Roboto Slab",Georgia,serif;color:#171f50;margin:0}#sheet h2{font:700 17px Georgia,serif;text-align:center;margin:18px 0;text-decoration:underline}
+#sheet table{width:100%;border-collapse:collapse}#sheet td{border:1px solid #444;padding:9px 10px}#sheet td:first-child{width:32%;font-weight:700;background:#eef2f6}
+#sheet .sg{display:flex;justify-content:space-between;margin-top:56px}#sheet .sg span{border-top:1px solid #111;padding-top:4px;width:30%;text-align:center;font-size:12px}
+#sheet .of{margin-top:28px;border:2px dashed #555;padding:12px;font-size:12px}}
+@media(max-width:960px){.why,.pr,.fg{grid-template-columns:1fr}}
+
+.tdb{background:linear-gradient(110deg,var(--navy),#23307a 60%,var(--teal));color:#fff;border-radius:24px;padding:40px;display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap;position:relative;overflow:hidden;margin-bottom:32px}
+.tdb::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;border:28px solid rgba(255,255,255,.08)}
+.tdb h2{font-size:clamp(26px,3.4vw,38px)}.tdb p{margin:10px 0 0;max-width:56ch;color:#d5dcf2}.tdb small{display:block;margin-bottom:8px;font-weight:700;color:#8fd0de}
+.tdb .btn{position:relative;z-index:1;background:#fff;color:var(--navy)}.tdb .btn:hover{background:var(--red);color:#fff}
+.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.tc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 18px 22px;text-align:center;position:relative}
+.tc .pf{width:150px;height:150px}.tc h3{font-size:18px}.tc p{margin:4px 0 0;color:var(--red);font-weight:700;font-size:14px}
+.tc button{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--mute);cursor:pointer}
+.te{border:2px dashed var(--line);border-radius:20px;padding:36px;text-align:center;color:var(--mute);grid-column:1/-1}
+dialog{border:0;border-radius:20px;padding:28px;width:min(440px,92vw);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(8,10,35,.7)}dialog form{display:grid;grid-template-columns:1fr;padding:0;border:0;gap:14px}
+dialog input[type=file]{height:auto;padding:10px}
+.dr{display:flex;gap:10px}.dr .btn{flex:1}
+@media(max-width:960px){.tg{grid-template-columns:1fr 1fr;gap:14px}.tdb{padding:26px}}
+</style></head><body>
+<div class="top"><div class="w"><span><b>Admissions open 2026</b> – 8th, Pre-9th, 9th, 10th, FSc and ICS</span><span>Satellite Town <b>0304-2700036</b> &nbsp;|&nbsp; Dubai Chowk <b>0300-9628632</b></span></div></div>
+<header><div class="w">
+<a class="brand" href="#home"><img src="images/img01.jpg" alt="Base Academy logo" width="52" height="52"><div class="wm">BASE<span>ACADEMY</span></div></a>
+<nav id="nav"><a href="#results">Results</a><a href="#why">Why Base</a><a href="#leaders">Leadership</a><a href="#teachers">Teachers</a><a href="#programs">Programs</a><a href="#admissions">Admissions</a><a href="#campuses">Campuses</a><a href="#faq">FAQ</a></nav>
+<div style="display:flex;gap:10px;align-items:center"><a class="btn r hdbtn" href="#admissions">Apply now</a><button class="menu" id="mb" aria-label="Open menu">☰</button></div>
+</div></header>
+
+<main id="home">
+<div class="hero"><div class="w">
+<div>
+<h1>True sense education, proven at the <em>Bahawalpur Board</em></h1>
+<p class="lead">Base Academy prepares students from 8th class to FSc and ICS with weekly tests, board-pattern practice and teachers who track every student personally.</p>
+<div class="cta"><a class="btn r" href="#admissions">Apply for 2026</a><a class="btn o" href="#results">See board results</a></div>
+<div class="facts"><div><b>1182/1200</b>Matric 2026, 3rd position</div><div><b>549/555</b>9th class 2026</div><div><b>2</b>campuses in Bahawalpur</div></div>
+</div>
+<div class="ring"><div class="frame"><img src="images/img02.jpg" alt="Base Academy building at Satellite Town campus"></div><img class="seal" src="images/img01.jpg" alt=""></div>
+</div></div>
+
+<section class="res" id="results"><div class="w">
+<div class="hd"><span class="kick">BISE Bahawalpur 2026</span><h2>Board results our students earned</h2><p>Tap a poster to view it full size.</p></div>
+<div class="rg">
+<div class="rc"><button data-z="images/img03.jpg" aria-label="Enlarge Hamza's result poster"><img src="images/img03.jpg" alt="Hamza Shafique Rao, 3rd position Matric 2026, 1182 out of 1200"></button>
+<div><b>1182<small> / 1200</small></b><h3>Hamza Shafique Rao</h3><p>3rd position, Matric, Male Science group · Board roll no. 522381</p></div></div>
+<div class="rc"><button data-z="images/img04.jpg" aria-label="Enlarge Hafsa's result poster"><img src="images/img04.jpg" alt="Hafsa Bilal, 9th class 2026, 549 out of 555"></button>
+<div><b>549<small> / 555</small></b><h3>Hafsa Bilal</h3><p>9th class · Board roll no. 821206</p></div></div>
+</div></div></section>
+
+<section id="why"><div class="w"><div class="hd"><span class="kick">Why Base Academy</span><h2>Preparation built around the board exam</h2></div>
+<div class="why"><div><h3>Weekly tests</h3><p>Regular testing shows each student where they stand long before the board paper.</p></div><div><h3>Chapter-wise revision</h3><p>Every chapter is revised in order so nothing is left for the last week.</p></div><div><h3>BISE Bahawalpur pattern</h3><p>Practice follows the paper pattern of the Bahawalpur Board, taught by our expert teachers.</p></div><div><h3>Personal tracking</h3><p>Attendance and progress are tracked for every student, with parents kept in the loop.</p></div></div></div></section>
+<section id="leaders"><div class="w">
+<div class="hd"><span class="kick">Leadership</span><h2>The people behind the results</h2><p>Led by educators who believe in learning that builds character as well as marks.</p></div>
+<div class="lg">
+<div class="lc"><div class="pf"><img src="images/img05.jpg" alt="Arshad Khan Sardozi"></div><h3>Arshad Khan Sardozi</h3><div class="role">Founder &amp; CEO</div><p>“Education is not about marks only, it’s about character, discipline and true sense of learning. At BASE, we prepare students for board and for life.”</p></div>
+<div class="lc"><div class="pf"><img src="images/img06.jpg" alt="Syed Mohsin"></div><h3>Syed Mohsin</h3><div class="role">Administrator</div><p>“Discipline, attendance and parent coordination are our core strengths. Every student is tracked personally for success.”</p></div>
+<div class="lc"><div class="pf"><img src="images/img07.jpg" alt="Junaid Nizami"></div><h3>Junaid Nizami</h3><div class="role">Academic Director</div><p>“Our academic plan is mapped to the BISE BWP pattern with weekly tests, chapter-wise revision and board-focused preparation.”</p></div>
+</div></div></section>
+
+<section id="teachers"><div class="w">
+<div class="tdb"><div><small>World Teachers’ Day · 5 October</small><h2>Happy Teachers’ Day</h2><p>To every teacher at Base Academy: thank you for the patience, the extra hours and the belief that built our students’ results. You are the base they stand on.</p></div><button class="btn" id="at" type="button">Add a teacher</button></div>
+<div class="hd"><span class="kick">Our Teachers</span><h2>Meet the teachers of Base Academy</h2></div>
+<div class="tg" id="tg"></div></div></section>
+<dialog id="dg"><form id="tf" method="dialog"><h3>Add a teacher</h3>
+<label>Photo<input id="tp" type="file" accept="image/*" required></label>
+<label>Name<input id="tn" required placeholder="e.g. Sir Ahmed Raza"></label>
+<label>Subject<input id="ts" required placeholder="e.g. Physics"></label>
+<p class="note" style="grid-column:auto">Teachers added here are saved on this device only. To show them to every visitor, send the photos and names to be published on the page.</p>
+<div class="dr"><button class="btn o" type="button" id="tx">Cancel</button><button class="btn r" type="submit">Add teacher</button></div></form></dialog>
+<section class="prg" id="programs"><div class="w">
+<div class="hd"><span class="kick">Programs 2026</span><h2>One academy from 8th class to intermediate</h2><p>Students can join at any stage and stay with the same teaching standard.</p></div>
+<div class="lad">
+<div class="st"><i>8</i><h3>8th</h3><p>A strong foundation before board classes</p></div>
+<div class="st"><i>P9</i><h3>Pre-9th</h3><p>Early preparation for science subjects</p></div>
+<div class="st"><i>9</i><h3>9th</h3><p>BISE Bahawalpur focused curriculum</p></div>
+<div class="st"><i>10</i><h3>10th</h3><p>Matric board preparation and revision</p></div>
+<div class="st"><i>F</i><h3>FSc</h3><p>Pre-Medical and Pre-Engineering</p></div>
+<div class="st"><i>ICS</i><h3>ICS</h3><p>Intermediate in Computer Science</p></div>
+</div></div></section>
+
+<section id="admissions"><div class="w">
+<div class="hd"><span class="kick">Admissions 2026</span><h2>Apply for admission</h2><p>Fill in the form once. Print the completed form to bring to the campus, or send it straight to the campus on WhatsApp.</p></div>
+<div class="pr"><div><i>1</i><b>Fill the form</b>Enter the student’s details below.</div><div><i>2</i><b>Print or send</b>Print the form or send it on WhatsApp.</div><div><i>3</i><b>Campus confirms</b>The campus team contacts you.</div><div><i>4</i><b>Join the class</b>Complete admission and start learning.</div></div>
+<div class="ad">
+<form id="fm">
+<label>Student name<input id="n" required placeholder="Full name" autocomplete="name"></label>
+<label>Father’s name<input id="fa" required placeholder="Father’s name"></label>
+<label>Class<select id="cl"><option>8th</option><option>Pre-9th</option><option>9th</option><option selected>10th</option><option>FSc Pre-Medical</option><option>FSc Pre-Engineering</option><option>ICS</option></select></label>
+<label>Campus<select id="cp"><option>Satellite Town</option><option>Dubai Chowk</option></select></label>
+<label>Phone / WhatsApp<input id="ph" required type="tel" placeholder="03XX-XXXXXXX" autocomplete="tel"></label>
+<label>Previous school<input id="ps" placeholder="School last attended"></label>
+<label class="f">Home address<input id="ad" placeholder="Area, city"></label>
+<div class="acts"><button class="btn t" type="button" id="pb">Print form</button><button class="btn r" type="button" id="wb">Send to campus on WhatsApp</button></div>
+<p class="note" id="msg" role="status">The form opens WhatsApp with your details ready to send, so you only press send. To save a copy, choose “Save as PDF” in the print window.</p>
+</form>
+<div class="side">
+<div class="pst"><img src="images/img08.jpg" alt="Admissions open poster"><p><b>Admissions open</b><br>Limited seats for 10th class and other programs. Call a campus to reserve yours.</p></div>
+<div class="bld"><img src="images/img02.jpg" alt="Satellite Town campus entrance"><p>Satellite Town campus, near One Unit Chowk, Hasilpur Road</p></div>
+</div></div></div></section>
+
+<section id="campuses" style="padding-top:0"><div class="w">
+<div class="hd"><span class="kick">Campuses</span><h2>Two campuses in Bahawalpur</h2></div>
+<div class="cg">
+<div class="cc a"><h3>Satellite Town Campus</h3><p>Gulf Plaza, near One Unit Chowk, Hasilpur Road, Bahawalpur</p><div class="ph"><a href="tel:03042700036">0304-2700036</a><a href="tel:03302700016">0330-2700016</a></div></div>
+<div class="cc b"><h3>Dubai Chowk Campus</h3><p>Subhan Plaza, Dubai Palace Road, near Girls Degree College, Bahawalpur</p><div class="ph"><a href="tel:03009628632">0300-9628632</a><a href="tel:03052700036">0305-2700036</a></div></div>
+</div>
+<p class="tm">Timing is 4:00 PM to 9:00 PM, closed on Sundays.</p>
+</div></section>
+<section id="faq" style="padding-top:0"><div class="w"><div class="hd"><span class="kick">FAQ</span><h2>Common questions</h2></div>
+<details><summary>Which classes can I apply for?</summary><p>We offer 8th, Pre-9th, 9th, 10th, FSc (Pre-Medical and Pre-Engineering) and ICS.</p></details>
+<details><summary>Which board do you prepare students for?</summary><p>Our teaching follows the BISE Bahawalpur board pattern, with weekly tests and chapter-wise revision.</p></details>
+<details><summary>How do I apply?</summary><p>Fill in the admission form on this page, then print it or send it to your campus on WhatsApp. The campus team will contact you to confirm.</p></details>
+<details><summary>Where are the campuses and what are the timings?</summary><p>Satellite Town (Gulf Plaza, near One Unit Chowk, Hasilpur Road) and Dubai Chowk (Subhan Plaza, Dubai Palace Road). Timing is 4:00 PM to 9:00 PM, closed on Sundays.</p></details>
+</div></section>
+<div class="band"><div class="w"><div><h2>Admissions are open for 2026</h2><p>Seats are limited. Apply today or call your nearest campus.</p></div><a class="btn" href="#admissions">Apply now</a></div></div>
+</main>
+
+<footer><div class="w"><div class="fg">
+<div><div class="fb"><img src="images/img01.jpg" alt=""><div><b>Base Academy</b><br>Bahawalpur</div></div><p class="ab">We believe in true sense education. Board-focused teaching from 8th class to FSc and ICS at two campuses in Bahawalpur.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#results">Board results 2026</a></li><li><a href="#why">Why Base Academy</a></li><li><a href="#leaders">Leadership</a></li><li><a href="#programs">Programs</a></li><li><a href="#admissions">Admissions</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><h4>Satellite Town Campus</h4><div class="cm">Gulf Plaza, near One Unit Chowk, Hasilpur Road, Bahawalpur<br><a href="tel:03042700036"><b>0304-2700036</b></a><a href="tel:03302700016"><b>0330-2700016</b></a></div></div>
+<div><h4>Dubai Chowk Campus</h4><div class="cm">Subhan Plaza, Dubai Palace Road, near Girls Degree College, Bahawalpur<br><a href="tel:03009628632"><b>0300-9628632</b></a><a href="tel:03052700036"><b>0305-2700036</b></a></div><div class="cm">Open 4:00 PM to 9:00 PM<br>Closed on Sundays</div></div>
+</div>
+<div class="cp bt"><span>© 2026 Base Academy Bahawalpur. All rights reserved. · Website designed by <a class="cr" href="https://www.instagram.com/officialchharis/" target="_blank" rel="noopener noreferrer" aria-label="Chaudhry Haris on Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><b>Chaudhry Haris</b></a>, student of class 10</span><a href="#home">Back to top ↑</a></div>
+</div></footer>
+<a class="wa" id="wl" href="https://wa.me/923042700036" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WhatsApp us</a>
+<div id="sheet"><div class="hdp"><img src="images/img01.jpg" alt=""><div><h1>BASE ACADEMY BAHAWALPUR</h1><div>We believe in true sense education</div></div></div>
+<h2>Admission Application Form 2026</h2>
+<table><tr><td>Date</td><td id="s_d"></td></tr><tr><td>Student name</td><td id="s_n"></td></tr><tr><td>Father’s name</td><td id="s_fa"></td></tr><tr><td>Class applied for</td><td id="s_cl"></td></tr><tr><td>Campus</td><td id="s_cp"></td></tr><tr><td>Phone / WhatsApp</td><td id="s_ph"></td></tr><tr><td>Previous school</td><td id="s_ps"></td></tr><tr><td>Home address</td><td id="s_ad"></td></tr></table>
+<div class="sg"><span>Parent / guardian signature</span><span>Student signature</span><span>Principal / admin</span></div>
+<div class="of"><b>For office use:</b> Admission no. ____________ &nbsp; Fee received ____________ &nbsp; Date ____________<br><br>Satellite Town: 0304-2700036, 0330-2700016 &nbsp;|&nbsp; Dubai Chowk: 0300-9628632, 0305-2700036</div></div>
+<div class="lb" id="lb" role="dialog" aria-label="Poster viewer"><button id="lc">Close</button><img id="li" alt="Poster"></div>
+<script>
+var nav=document.getElementById('nav');
+document.getElementById('mb').onclick=function(){nav.classList.toggle('on')};
+nav.onclick=function(){nav.classList.remove('on')};
+var lb=document.getElementById('lb'),li=document.getElementById('li');
+document.querySelectorAll('[data-z]').forEach(function(b){b.onclick=function(){li.src=b.dataset.z;lb.classList.add('on')}});
+function cl(){lb.classList.remove('on')}
+lb.onclick=function(e){if(e.target!==li)cl()};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+var $=function(i){return document.getElementById(i)},fm=$('fm'),ids=['n','fa','cl','cp','ph','ps','ad'];
+var WA={'Satellite Town':'923042700036','Dubai Chowk':'923009628632'};
+function get(){if(!fm.reportValidity())return null;var d={};ids.forEach(function(k){d[k]=$(k).value.trim()||'-'});return d}
+$('cp').onchange=function(){$('wl').href='https://wa.me/'+WA[$('cp').value]};
+$('pb').onclick=function(){var d=get();if(!d)return;ids.forEach(function(k){$('s_'+k).textContent=d[k]});$('s_d').textContent=new Date().toLocaleDateString('en-GB');
+try{window.print()}catch(e){$('msg').textContent='Printing is blocked here. Press Ctrl+P (or Cmd+P) to print the form.'}};
+$('wb').onclick=function(){var d=get();if(!d)return;
+var m='Admission Application 2026 - Base Academy%0AStudent: '+enc(d.n)+'%0AFather: '+enc(d.fa)+'%0AClass: '+enc(d.cl)+'%0ACampus: '+enc(d.cp)+'%0APhone: '+enc(d.ph)+'%0APrevious school: '+enc(d.ps)+'%0AAddress: '+enc(d.ad);
+var a=document.createElement('a');a.href='https://wa.me/'+WA[d.cp]+'?text='+m;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+$('msg').textContent='WhatsApp should now open with your details ready. Press send there to deliver them to the '+d.cp+' campus.'};
+function enc(v){return encodeURIComponent(v)}
+
+var TK='baseTeachers',TL=[];try{TL=JSON.parse(localStorage.getItem(TK)||'[]')}catch(e){}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function rt(){var g=$('tg');if(!TL.length){g.innerHTML='<div class="te">Teacher photos will appear here. Use “Add a teacher” to put the first one up.</div>';return}
+g.innerHTML=TL.map(function(x,i){return '<div class="tc"><button data-i="'+i+'" aria-label="Remove '+esc(x.n)+'">×</button><div class="pf"><img src="'+x.p+'" alt="'+esc(x.n)+'"></div><h3>'+esc(x.n)+'</h3><p>'+esc(x.s)+'</p></div>'}).join('')}
+$('tg').onclick=function(e){var b=e.target.closest('button');if(!b)return;TL.splice(+b.dataset.i,1);sv();rt()};
+function sv(){try{localStorage.setItem(TK,JSON.stringify(TL))}catch(e){}}
+$('at').onclick=function(){$('dg').showModal()};$('tx').onclick=function(){$('dg').close()};
+$('tf').onsubmit=function(e){e.preventDefault();var f=$('tp').files[0];if(!f)return;var r=new FileReader();
+r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,420/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+TL.push({n:$('tn').value.trim(),s:$('ts').value.trim(),p:c.toDataURL('image/jpeg',.82)});sv();rt();$('tf').reset();$('dg').close()};im.src=r.result};r.readAsDataURL(f)};
+rt();
+</script>
+</body></html>
